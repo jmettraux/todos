@@ -1,7 +1,7 @@
 
 [ ] mirror DST transition #next_time specs for #previous_time
 
-[ ] gh-18
+[o] gh-18
     `[ '0 9 29 feb *', '2016-02-29 09:00', '2019-03-23' ],`
     ```
     def dec_month
