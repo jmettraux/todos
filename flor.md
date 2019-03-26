@@ -11,6 +11,8 @@
 [o] `wait: 'var:xxx'` name
     `wait: 'var:xxx:yyy'` name and value (JSON if `^", ^[, ^{`)?
 
+[ ] `add` for other concurrent procedures
+
 [ ] complete/fix Flor::Execution#full_tree
 
 [ ] "ceach" and "ect" equivalent to "c-for-each"
@@ -46,6 +48,10 @@
     cnode = lookup_var_node(@node, 'l')
     cnid = cnode['nid']
     ```
+
+[o] let classical loader understand .rb
+[ ] let hloader factor in messages when, well, loading
+
 
 [o] Error in "on_error" and it loops wildly... Fix that!
 [o] Refine cross on_error blocks...
