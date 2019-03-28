@@ -12,6 +12,15 @@
     `wait: 'var:xxx:yyy'` name and value (JSON if `^", ^[, ^{`)?
 
 [ ] `add` for other concurrent procedures
+[ ] "add-branch" procedure
+
+[ ] `add` for iterations
+[ ] "add-iteration" procedure
+[ ] turn `Scheduler#add_branch` into generic `#add`
+
+[ ] verify that payload is duplicated in citerator
+    that payload isn't shared by children
+    see lib/flor/punit/citerator.rb:91
 
 [ ] complete/fix Flor::Execution#full_tree
 
