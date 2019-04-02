@@ -11,6 +11,12 @@
 [o] `wait: 'var:xxx'` name
     `wait: 'var:xxx:yyy'` name and value (JSON if `^", ^[, ^{`)?
 
+[o] introduce "_rem" (complement to "_ref" and "_rep") "reference maybe"?
+    "_reff"
+[ ] add spec for `def f.a.x f.a.y` (deep arg)
+[ ] `ceach [ 1 2 3 ] idx: f.i elt: f.e` (named custom keys)
+[ ] document "ceach"
+
 [ ] `add` for other concurrent procedures
 [ ] "add-branch" procedure
 
