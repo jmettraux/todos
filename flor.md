@@ -17,6 +17,20 @@
 [ ] `ceach [ 1 2 3 ] idx: f.i elt: f.e` (named custom keys)
 [ ] document "ceach"
 
+[ ] ideas:
+    `signal exid: executions.where(...) 'green'`
+    `signal exid: 'any'`
+    `signal exid: 'all'`
+    `signal exid: 'org.acme'` (domain)
+    "trap" any signal (reserve, de-reserve)
+    "trap" with conditions...
+
+[o] "on" in blocking mode
+[o] document "trap" blocking mode
+[o] document "on" blocking mode
+
+[ ] `def reff_att_children` move from c_iterator to procedure?
+
 [ ] `add` for other concurrent procedures
 [ ] "add-branch" procedure
 
