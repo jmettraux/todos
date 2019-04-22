@@ -17,6 +17,19 @@
 [ ] `ceach [ 1 2 3 ] idx: f.i elt: f.e` (named custom keys)
 [ ] document "ceach"
 
+[ ] ```
+    lanes
+      sequence
+        a _
+      sequence
+        b _
+      sequence
+        c _
+        over _
+    ```
+
+[ ] `unit.cancel(exid, 'tagname')`
+
 [ ] ideas:
     `signal exid: executions.where(...) 'green'`
     `signal exid: 'any'`
@@ -25,9 +38,18 @@
     "trap" any signal (reserve, de-reserve)
     "trap" with conditions...
 
+[ ] idea: `trap plmatch: { a: 'blue' }`
+    traps a message whose payload has `'a' => 'blue'`
+    `trap plmatch: { a.deep.0: 'blue' }`
+
 [o] "on" in blocking mode
 [o] document "trap" blocking mode
 [o] document "on" blocking mode
+
+[ ] have a ganger that accept any user currently in the "active directory"
+    no need to rebind each time a user joins...
+
+[ ] idea: pseudo variables `fields` and/or `payload`
 
 [ ] `def reff_att_children` move from c_iterator to procedure?
 
@@ -250,4 +272,65 @@
 
 
 ## src
+
+lib/flor/core.rb:38:
+  ```# TODO re-parse and indicate what went wrong...```
+lib/flor/core/executor.rb:203:#
+  ```TODO how about _ref and letting that procedure fail```
+lib/flor/core/node.rb:432:
+  ```# TODO fun call```
+lib/flor/core/procedure.rb:406:
+  ```(node_status_flavour == 'on-error') || # TODO use the cause ???```
+lib/flor/core/procedure.rb:782:
+  ```#t = t || lookup_tree(fni) # TODO when fun[1]['tree'] is settled, drop me```
+lib/flor/core/procedure.rb:940:
+  ```# TODO fail if the procedure changed```
+lib/flor/core/texecutor.rb:175:
+  ```# TODO eventually merge with Waiter.parse_serie```
+lib/flor/flor.rb:567:#
+  ```TODO regexes```
+lib/flor/pcore/arith.rb:100:
+  ```# TODO use djan instead of #to_s?```
+lib/flor/pcore/arith.rb:101:
+  ```# TODO use JSON instead of #to_s or djan?```
+lib/flor/pcore/reduce.rb:107:
+  ```'fun' => 0 },   # TODO really?```
+lib/flor/punit/cancel.rb:32:
+  ```# # TODO document "kill"```
+lib/flor/punit/m_ram.rb:141:
+  ```# TODO somehow, what if done is false, should we un-over the concurrence?```
+lib/flor/punit/c_iterator.rb:140:
+  ```# TODO: eventually move me up to Flor::Procedure, as Flor::Iterator might```
+lib/flor/unit/executor.rb:110:#
+  ```TODO eventually, have a dump dir```
+lib/flor/unit/loader.rb:33:
+  ```#  # TODO```
+lib/flor/unit/loader.rb:34:
+  ```#  # TODO work with Flor.load_procedures```
+lib/flor/unit/logger.rb:4:
+  ```# TODO ::Logger has a formatting callback```
+lib/flor/unit/logger.rb:287:
+  ```end # TODO tstamp!```
+lib/flor/unit/scheduler.rb:137:
+  ```# TODO heartbeat, every x minutes, when idle, log something```
+lib/flor/unit/scheduler.rb:195:
+  ```# TODO variables```
+lib/flor/unit/scheduler.rb:197:
+  ```# TODO payload```
+lib/flor/unit/storage.rb:449:
+  ```#points = att_a('point', 'points', nil)  ### TODO```
+lib/flor/unit/waiter.rb:11:
+  ```# TODO fail if the serie mixes msg_waiting with row_waiting...```
+lib/flor/unit/hloader.rb:85:
+  ```#  # TODO```
+lib/flor/unit/hloader.rb:86:
+  ```#  # TODO work with Flor.load_procedures```
+spec/core/applications_spec.rb:294:#
+  ```TODO closure?```
+spec/core/variables_spec.rb:232:
+  ```push f.l f.a[2;4] # TODO```
+spec/pcore/andor_spec.rb:112:#
+  ```and true or false 2 FIXME TODO```
+spec/unit/waiter_multi_spec.rb:153:
+  ```#expect(ptr.data).to eq('xxx') # TODO maybe```
 
