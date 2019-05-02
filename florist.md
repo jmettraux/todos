@@ -12,6 +12,12 @@
 [o] make :current pseudo assignment the default
 [x] enforce state for offer/allocate/start
 
+[ ] `Task#push_payload`
+    `Task#push_content`
+    `Task#<<`
+
+[ ] Task#transition_to_x accept `(:user, :bob)`
+
 [ ] enforce single resource for allocated
 
 [ ] factor @domain in List#list_tasks

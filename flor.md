@@ -1,4 +1,11 @@
 
+[ ] `Scheduler#dump(exid_or_domain_or_nil, io=nil)`
+    `Scheduler#load(exid_or_domain_or_nil, io_or_string)`
+      >
+      > JSON.load:
+      > A source can either be a string-like object, an IO-like object,
+      > or an object responding to the read method.
+
 [o] when putting an execution, put the 'last_message'
 [o] waiter.rb # TODO fail if the serie mixes msg_waiting with row_waiting...
 [o] idea for the waiter, get all the pointers in one SELECT for 1 session
