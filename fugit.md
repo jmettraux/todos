@@ -1,6 +1,8 @@
 
 [ ] mirror DST transition #next_time specs for #previous_time
 
+[ ] remove Feb 31 and friends to simply cron @arrays
+
 [o] gh-18
     `[ '0 9 29 feb *', '2016-02-29 09:00', '2019-03-23' ],`
     ```
