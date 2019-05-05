@@ -1,10 +1,16 @@
 
-[ ] `Scheduler#dump(exid_or_domain_or_nil, io=nil)`
+[o] `Scheduler#dump(exid_or_domain_or_nil, io=nil)`
     `Scheduler#load(exid_or_domain_or_nil, io_or_string)`
       >
       > JSON.load:
       > A source can either be a string-like object, an IO-like object,
       > or an object responding to the read method.
+
+[o] `Scheduler#load() { ... }` (yield h)
+[o] `Scheduler#load()` use Sequel import, faster...
+
+[o] `Scheduler#dump(exids: [], ...)`
+[o] `Scheduler#load(exids: [], ...)`
 
 [o] when putting an execution, put the 'last_message'
 [o] waiter.rb # TODO fail if the serie mixes msg_waiting with row_waiting...
@@ -23,6 +29,12 @@
 [ ] add spec for `def f.a.x f.a.y` (deep arg)
 [ ] `ceach [ 1 2 3 ] idx: f.i elt: f.e` (named custom keys)
 [ ] document "ceach"
+
+[ ] ```
+    define lanes argh
+      concurrence *argh
+    end
+    ```
 
 [ ] ```
     lanes
