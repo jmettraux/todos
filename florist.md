@@ -11,12 +11,11 @@
 [o] use status: 'active' in all 3 models
 [o] make :current pseudo assignment the default
 [x] enforce state for offer/allocate/start
+[o] Task#transition_to_x accept `(:user, :bob)`
 
 [ ] `Task#push_payload`
     `Task#push_content`
     `Task#<<`
-
-[ ] Task#transition_to_x accept `(:user, :bob)`
 
 [ ] enforce single resource for allocated
 
