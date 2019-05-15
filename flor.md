@@ -28,7 +28,7 @@
     "_reff"
 [ ] add spec for `def f.a.x f.a.y` (deep arg)
 [ ] `ceach [ 1 2 3 ] idx: f.i elt: f.e` (named custom keys)
-[ ] document "ceach"
+[o] document "ceach"
 
 [ ] ```
     define lanes argh
