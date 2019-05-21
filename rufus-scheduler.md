@@ -1,5 +1,6 @@
 
 [ ] `Job#resume(ignore: true)`
+    `Job#resume(discard: true)`
     as discussed with @wintersolutions on https://gitter.im/floraison/fugit
 
 ## old
