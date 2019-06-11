@@ -1,4 +1,15 @@
 
+[x] store "lines" in execution (or in node 0?)
+    store "lines" in added after nodes
+
+[x] `Execution#lookup_tag_nid(tag_name)`
+    `Execution#lookup_tag_nids(tag_name)`
+[o] `Execution#lookup_node(tag_name)`
+    `Execution#lookup_nodes(tag_name)`
+
+[o] `Execution#lookup_node('c-each whatever')`
+    `Execution#lookup_nodes('0_0_1')`
+
 [o] `Scheduler#dump(exid_or_domain_or_nil, io=nil)`
     `Scheduler#load(exid_or_domain_or_nil, io_or_string)`
       >
@@ -27,7 +38,7 @@
 [o] introduce "_rem" (complement to "_ref" and "_rep") "reference maybe"?
     "_reff"
 [ ] add spec for `def f.a.x f.a.y` (deep arg)
-[ ] `ceach [ 1 2 3 ] idx: f.i elt: f.e` (named custom keys)
+[o] `ceach [ 1 2 3 ] idx: f.i elt: f.e` (named custom keys)
 [o] document "ceach"
 
 [ ] ```
@@ -48,6 +59,7 @@
     ```
 
 [ ] `unit.cancel(exid, 'tagname')`
+    `unit.cancel(exid, /xxx/)`
 
 [ ] ideas:
     `signal exid: executions.where(...) 'green'`
@@ -99,7 +111,7 @@
 
 [ ] similar to domain variables, have domain fields (templates for launch workitems)
 
-[ ] doc/quickstart with HashLoader
+[o] doc/quickstart with HashLoader
 
 [ ] secret box, vault
 
