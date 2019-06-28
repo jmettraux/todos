@@ -37,7 +37,7 @@
 
 [o] introduce "_rem" (complement to "_ref" and "_rep") "reference maybe"?
     "_reff"
-[ ] add spec for `def f.a.x f.a.y` (deep arg)
+[o] add spec for `def f.a.x f.a.y` (deep arg)
 [o] `ceach [ 1 2 3 ] idx: f.i elt: f.e` (named custom keys)
 [o] document "ceach"
 
@@ -97,7 +97,7 @@
 
 [ ] complete/fix Flor::Execution#full_tree
 
-[ ] "ceach" and "ect" equivalent to "c-for-each"
+[x] "ceach" and "ect" equivalent to "c-for-each"
 
 [ ] `@unit0.add_tasker('hole', lambda {})` not working
     `@unit0.add_tasker('hole') {}` works
