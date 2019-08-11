@@ -1,4 +1,10 @@
 
+[ ] allow for `SGENV=x ruby nada` as caller cmd
+[o] set timeout: false, -1, ...
+[o] verify that child process got killed, unless nokill:
+[x] use https://github.com/enkessler/childprocess
+    in lib/flor/unit/caller.rb
+
 [x] store "lines" in execution (or in node 0?)
     store "lines" in added after nodes
 
