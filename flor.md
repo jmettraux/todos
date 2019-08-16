@@ -1,5 +1,7 @@
 
-[ ] allow for `SGENV=x ruby nada` as caller cmd
+[o] stop using Ruby's Timeout
+    https://www.mikeperham.com/2015/05/08/timeout-rubys-most-dangerous-api/
+[o] allow for `SGENV=x ruby nada` as caller cmd
 [o] set timeout: false, -1, ...
 [o] verify that child process got killed, unless nokill:
 [x] use https://github.com/enkessler/childprocess
@@ -105,7 +107,7 @@
 
 [x] "ceach" and "ect" equivalent to "c-for-each"
 
-[ ] `@unit0.add_tasker('hole', lambda {})` not working
+[o] `@unit0.add_tasker('hole', lambda {})` not working
     `@unit0.add_tasker('hole') {}` works
 
 [o] add `File :content` to :flor_pointers
