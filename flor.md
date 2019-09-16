@@ -1,4 +1,7 @@
 
+[ ] Loader#definitions (or whatever other name)
+    Loader#taskers
+
 [o] stop using Ruby's Timeout
     https://www.mikeperham.com/2015/05/08/timeout-rubys-most-dangerous-api/
 [o] allow for `SGENV=x ruby nada` as caller cmd
@@ -123,7 +126,7 @@
 
 [ ] secret box, vault
 
-[ ] ```
+[o] ```
     define f f.x f.y
     ```
 [ ] ```
