@@ -1,4 +1,6 @@
 
+[ ] transition_to_failed, _to_completed added payload: / merge: spec
+
 [o] add spec for ConflictError
 [o] have a single #refresh implementation `@cache_xxx`
     done at flor level
