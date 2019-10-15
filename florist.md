@@ -1,5 +1,5 @@
 
-[ ] transition_to_failed, _to_completed added payload: / merge: spec
+[o] transition_to_failed, _to_completed add payload: / merge: spec
 
 [o] add spec for ConflictError
 [o] have a single #refresh implementation `@cache_xxx`
